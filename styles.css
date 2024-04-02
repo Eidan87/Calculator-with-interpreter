@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: calc(100% - 40px); /* Ajusta el tamaño del display */
+    height: 60px; /* Ajusta la altura del display */
+    font-size: 1.5em; /* Ajusta el tamaño del texto en el display */
+    margin-bottom: 10px; /* Agrega un margen inferior para separarlo de los botones */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #d8d8d8;
+}
+
+.buttons button.operator {
+    background-color: #ffaf00;
+    color: white;
+}
+
+.buttons button.operator:hover {
+    background-color: #cc8c00;
+}
+
+.chart-container {
+    width: 600px; /* Anchura del contenedor del gráfico */
+    height: 400px; /* Altura del contenedor del gráfico */
+    margin: 20px auto; /* Ajusta el margen para centrar el contenedor */
+}
